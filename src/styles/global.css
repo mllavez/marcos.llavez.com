@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+@layer components {
+  .experience {
+    @apply text-base md:text-lg;
+  }
+}
+.logo-container {
+  transition:
+    width 0.8s cubic-bezier(0.5, 0, 0, 1) 0s,
+    transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  will-change: width, transform;
+  width: 100%;
+  transform: translate3d(0px, 24px, 0px);
+  height: auto;
+}
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.logo {
+  opacity: 1;
+  transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+.header-scrolled {
+  transition:
+    width 0.8s cubic-bezier(0.5, 0, 0, 1) 0s,
+    transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  width: 143px;
+  height: 0px;
+  will-change: width, transform;
+  transform: translate3d(0px, -24px, 0px);
+}
+.header {
+  position: relative;
+  color: var(--g-color-foreground);
+  transition: min-height 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  will-change: min-height;
+  min-height: calc(14.7842vw + 80px);
+}
+.header-action-wrapper li {
+  display: flex;
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.sticky-container {
+  -webkit-box-align: center;
+  align-items: center;
+  bottom: 2.5rem;
+  margin: 0px auto;
+  max-width: 800px;
+  min-height: 136px;
+  pointer-events: none;
+  position: sticky;
+  transform: translate3d(0px, 0px, 0px);
+  transition: bottom 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  user-select: none;
+  width: 100%;
+  z-index: 1;
+}
+.title-cta-container {
+  bottom: 0px;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 0px;
+  visibility: visible;
+  z-index: 1;
+}
+.title-cta-container h3 {
+  animation: auto ease 0s 1 normal none running none;
+  text-transform: uppercase;
+  margin: 0px 2.5rem 1rem;
+  text-align: center;
+}
+.media-container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 1fr 0px;
+  height: auto;
+  -webkit-box-pack: center;
+  justify-content: center;
+  overflow: clip;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  clip: auto;
+  mask-image: -webkit-linear-gradient(
+    top,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
+.hidden-container {
+  background-color: var(--g-color-background);
+  height: fit-content;
+  margin: auto;
+  padding: 0px;
+  position: relative;
+}
+.hero-swiper {
+  place-content: center;
+  display: flex;
+  -webkit-box-pack: center;
+  width: 100%;
+}
+.link-wrapper {
+  -webkit-box-align: center;
+  align-items: center;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  animation: auto ease 0s 1 normal none running none;
+  pointer-events: auto;
+  transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+}
+.image-wrapper {
+  max-width: 800px;
+  width: calc(100vw - 2rem);
+  aspect-ratio: 3/4;
+  height: auto;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+}
+.experience {
+  border-bottom: 0.05rem solid hsl(var(--border));
+  padding: 1rem 0;
+}
+.experience:last-child {
+  border-bottom: none;
+}
+.cta-primary {
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1) 0.4s;
+  pointer-events: auto;
+  z-index: 0;
+  position: relative;
+  opacity: 0;
+  transform: translateY(100%);
+
+  border: 0;
+  box-sizing: border-box;
+}
+.cta-primary[data-animate="true"] {
+  transform: translateY(0%);
+  opacity: 1 !important;
+}
+.cta-primary::before {
+  border-radius: 2px;
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.8s;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.5, 0, 0, 1);
+  width: 100%;
+  z-index: -1;
+}
+.hero-cta-title {
+  opacity: 0;
+  transform: translateY(100%);
+}
+.hero-cta-title[data-animate="true"] {
+  transform: translateY(0%);
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  opacity: 1 !important;
+}
+.hero-image {
+  transform: translzteZ(0px);
+  scale: 1.2;
+}
+.hero-image[data-animate="true"] {
+  scale: 1;
+  transition: scale 1.2s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
