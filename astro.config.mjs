@@ -10,7 +10,7 @@ export default defineConfig({
             applyBaseStyles: true,
         }),
     ],
-    site: "",
+    site: "https://marcos.llavez.com",
     image: {
         service: passthroughImageService(),
     },
