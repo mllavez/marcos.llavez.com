@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/check':
-    specifier: ^0.4.1
-    version: 0.4.1(prettier-plugin-astro@0.12.3)(prettier@3.2.5)(typescript@5.4.3)
+    specifier: ^0.5.0
+    version: 0.5.10(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.3)
   '@astrojs/react':
     specifier: ^3.1.0
     version: 3.1.0(@types/react-dom@18.2.22)(@types/react@18.2.69)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.4)
@@ -51,8 +51,8 @@ dependencies:
     specifier: ^10.18.0
     version: 10.18.0(react-dom@18.2.0)(react@18.2.0)
   lucide-astro:
-    specifier: ^0.309.0
-    version: 0.309.0(astro@4.5.9)
+    specifier: ^0.363.0
+    version: 0.363.0(astro@4.5.9)
   lucide-react:
     specifier: ^0.309.0
     version: 0.309.0(react@18.2.0)
@@ -95,8 +95,8 @@ devDependencies:
     specifier: ^8.57.0
     version: 8.57.0
   eslint-plugin-astro:
-    specifier: ^0.31.4
-    version: 0.31.4(eslint@8.57.0)
+    specifier: ^0.33.0
+    version: 0.33.0(eslint@8.57.0)
   eslint-plugin-jsx-a11y:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.57.0)
@@ -107,8 +107,8 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   prettier-plugin-astro:
-    specifier: ^0.12.3
-    version: 0.12.3
+    specifier: ^0.13.0
+    version: 0.13.0
 
 packages:
 
@@ -129,13 +129,13 @@ packages:
       '@jridgewell/trace-mapping': 0.3.25
     dev: false
 
-  /@astrojs/check@0.4.1(prettier-plugin-astro@0.12.3)(prettier@3.2.5)(typescript@5.4.3):
-    resolution: {integrity: sha512-XEsuU4TlWkgcsvdeessq5mXLXV1fejtxIioCPv/FfhTzb1bDYe2BtLiSBK+rFTyD9Hl686YOas9AGNMJcpoRsw==}
+  /@astrojs/check@0.5.10(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.3):
+    resolution: {integrity: sha512-vliHXM9cu/viGeKiksUM4mXfO816ohWtawTl2ADPgTsd4nUMjFiyAl7xFZhF34yy4hq4qf7jvK1F2PlR3b5I5w==}
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
     dependencies:
-      '@astrojs/language-server': 2.8.4(prettier-plugin-astro@0.12.3)(prettier@3.2.5)(typescript@5.4.3)
+      '@astrojs/language-server': 2.8.4(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.3)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
@@ -156,7 +156,7 @@ packages:
     resolution: {integrity: sha512-tGmHvrhpzuz0JBHaJX8GywN9g4rldVNHtkoVDC3m/DdzBO70jGoVuc0uuNVglRYnsdwkbG0K02Iw3nOOR3/Y4g==}
     dev: false
 
-  /@astrojs/language-server@2.8.4(prettier-plugin-astro@0.12.3)(prettier@3.2.5)(typescript@5.4.3):
+  /@astrojs/language-server@2.8.4(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.3):
     resolution: {integrity: sha512-sJH5vGTBkhgA8+hdhzX78UUp4cFz4Mt7xkEkevD188OS5bDMkaue6hK+dtXWM47mnrXFveXA2u38K7S+5+IRjA==}
     hasBin: true
     peerDependencies:
@@ -177,7 +177,7 @@ packages:
       '@volar/typescript': 2.1.5
       fast-glob: 3.3.2
       prettier: 3.2.5
-      prettier-plugin-astro: 0.12.3
+      prettier-plugin-astro: 0.13.0
       volar-service-css: 0.0.34(@volar/language-service@2.1.5)
       volar-service-emmet: 0.0.34(@volar/language-service@2.1.5)
       volar-service-html: 0.0.34(@volar/language-service@2.1.5)
@@ -5718,8 +5718,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /eslint-compat-utils@0.4.1(eslint@8.57.0):
-    resolution: {integrity: sha512-5N7ZaJG5pZxUeNNJfUchurLVrunD1xJvyg5kYOIVF8kg1f3ajTikmAu/5fZ9w100omNPOoMjngRszh/Q/uFGMg==}
+  /eslint-compat-utils@0.5.0(eslint@8.57.0):
+    resolution: {integrity: sha512-dc6Y8tzEcSYZMHa+CMPLi/hyo1FzNeonbhJL7Ol0ccuKQkwopJcJBA9YL/xmMTLU1eKigXo9vj9nALElWYSowg==}
     engines: {node: '>=12'}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -5728,8 +5728,8 @@ packages:
       semver: 7.6.0
     dev: true
 
-  /eslint-plugin-astro@0.31.4(eslint@8.57.0):
-    resolution: {integrity: sha512-aU1KYSo7TdnSTBenyAWuRFB07lVUe0/6u9cltC2ZCx0QgcfC+HP7e87OkmvoKh+RZuaSsVgLG4zCOI8LZ6nS/Q==}
+  /eslint-plugin-astro@0.33.0(eslint@8.57.0):
+    resolution: {integrity: sha512-Plvj8Kg1/4IbFThzhLSZ+tackLT/BR1VVkrmyDYDScZFxB6AmuTcn9d6SW71QL6xgnEKjGI8mQiTjSq8BdCl7Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -5739,7 +5739,8 @@ packages:
       '@typescript-eslint/types': 5.62.0
       astro-eslint-parser: 0.16.3
       eslint: 8.57.0
-      eslint-compat-utils: 0.4.1(eslint@8.57.0)
+      eslint-compat-utils: 0.5.0(eslint@8.57.0)
+      globals: 13.24.0
       postcss: 8.4.38
       postcss-selector-parser: 6.0.16
     transitivePeerDependencies:
@@ -7038,8 +7039,8 @@ packages:
     dependencies:
       yallist: 4.0.0
 
-  /lucide-astro@0.309.0(astro@4.5.9):
-    resolution: {integrity: sha512-vg3B3uhHSJFOpGUJkrDr07NhQT3rtVUbBI1SzW7tEiDNs/WyH+xx57xscuame6/nEweqIgPyCiAj+Rh7TyGLpw==}
+  /lucide-astro@0.363.0(astro@4.5.9):
+    resolution: {integrity: sha512-+JLM5RmNj/cZhnbPZFJOhHZFuE2dDElBTsZI6MXISm4HGfduBWxh47W+9ffH2ZykOcx2TRJiwRvYnUi2gqpQzQ==}
     peerDependencies:
       astro: '>=2.7.1'
     dependencies:
@@ -8026,8 +8027,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-astro@0.12.3:
-    resolution: {integrity: sha512-GthUSu3zCvmtVyqlArosez0xE08vSJ0R1sWurxIWpABaCkNGYFANoUdFkqmIo54EV2uPLGcVJzOucWvCjPBWvg==}
+  /prettier-plugin-astro@0.13.0:
+    resolution: {integrity: sha512-5HrJNnPmZqTUNoA97zn4gNQv9BgVhv+et03314WpQ9H9N8m2L9OSV798olwmG2YLXPl1iSstlJCR1zB3x5xG4g==}
     engines: {node: ^14.15.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 1.8.2
