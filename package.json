@@ -39,7 +39,7 @@
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.3",
     "@tailwindcss/typography": "^0.5.10",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-astro": "^0.33.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
