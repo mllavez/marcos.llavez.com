@@ -27,7 +27,7 @@
     "framer-motion": "^10.18.0",
     "lucide-astro": "^0.363.0",
     "lucide-react": "^0.309.0",
-    "nanostores": "^0.9.5",
+    "nanostores": "^0.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.2",
